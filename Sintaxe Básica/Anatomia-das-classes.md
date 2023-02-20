@@ -23,26 +23,36 @@ public static void main (String [] args){
 
 ### Declarando Variáveis
 ```
-Tipo nomeBemDefinido = Atribuição;
+Visibilidade Tipo nomeBemDefinido = Atribuição;
 ```
 _A atribuição é opcional._
 
 Exemplo:
 ```
-String nome = "Victor";
-int idade = 28;
-boolean isMale = true;
+private String nome = "Victor";
+private int idade = 28;
+private boolean isMale = true;
 ```
 
 ### Declarando Métodos
 ```
-TipoRetorno nomeObjetivoNoInfinitivo (TipoParametro parametro)
+Visibilidade TipoRetorno nomeObjetivoNoInfinitivo (TipoParametro parametro)
 ```
 Exemplo:
 ```
-int somar(int num1, int num2){
+private int somar(int num1, int num2){
 	
 	return num1+num2;
+}
+
+protected boolean isEven(int num){
 	
+	boolean isEven = num % 2 == 0; 
+	return isEven;
+}
+
+public void imprime(String str){
+	
+	System.out.println(str);
 }
 ```
