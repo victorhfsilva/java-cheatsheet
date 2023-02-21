@@ -43,6 +43,18 @@ double div = 9.3 / 3.1;
 
 //Módulo
 int mod = 14 % 3;
+
+//Soma com sigo mesmo
+soma += 3.2;
+
+//Subtração com sigo mesmo
+sub -= 3.9;
+
+//Multiplicação com sigo mesmo
+mult *= 2;
+
+//Divisão com sigo mesmo
+div /= 3;
 ``` 
 
 ### Unário
@@ -107,9 +119,12 @@ _Para comparar se dois objetos são iguais utiliza-se o método equals, não o o
 boolean cond1 = true;
 boolean cond2 = false; 
 
-//And
+//And (Conjunção)
 boolean opAnd = cond1 && cond2;
 
-//Or
+//Or (Disjunção)
 boolean opOr = cond1 || cond2;
+
+//Xor (Disjunção Exclusiva)
+boolean opXor = cond1 ^ cond2;
 ```
