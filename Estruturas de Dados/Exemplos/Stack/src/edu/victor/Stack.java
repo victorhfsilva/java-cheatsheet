@@ -1,14 +1,14 @@
 package edu.victor;
 
-public class Stack {
+public class Stack<T> {
 
-	private Node topNode;
+	private Node<T> topNode;
 	
 	public Stack() {
 		this.topNode = null;
 	}
 	
-	public Node getTopNode() {
+	public Node<T> getTopNode() {
 		return topNode;
 	}
 	
@@ -16,21 +16,21 @@ public class Stack {
 		return topNode == null ? true : false;	
 	}
 	
-	public Node top() {
+	public Node<T> top() {
 		return topNode;
 	}
 	
-	public Node pop() {
+	public Node<T> pop() {
 		if (!isEmpty()) {
-			Node previousTopNode = this.topNode;
+			Node<T> previousTopNode = this.topNode;
 			topNode = previousTopNode.getNextNode();
 			return previousTopNode;
 		}
 		return null;
 	}
 	
-	public void push(Node newNode) {
-		Node previousTopNode = this.topNode;
+	public void push(Node<T> newNode) {
+		Node<T> previousTopNode = this.topNode;
 		topNode = newNode;
 		topNode.setNextNode(previousTopNode);
 	}
@@ -38,9 +38,9 @@ public class Stack {
 	@Override
 	public String toString() {
 		
-		Node currentNode = topNode;
+		Node<T> currentNode = topNode;
 		String nodesContent = "";
-		Node nextNode = currentNode != null ? currentNode.getNextNode() : null;
+		Node<T> nextNode = currentNode != null ? currentNode.getNextNode() : null;
 		
 		while (currentNode != null) {
 			nodesContent = nodesContent + currentNode.getContent() + (nextNode != null ? ", ": "");
