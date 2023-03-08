@@ -1,18 +1,15 @@
 package edu.victor;
 
-public class Node <T> {
-	
-	
+public class Node<T> {
+
 	private T content;
-	private Node<T> nextNode;
-	
+	Node<T> nextNode;
 	
 	public Node(T content) {
 		this.nextNode = null;
 		this.content = content;
 	}
-	
-	
+
 	public T getContent() {
 		return content;
 	}
@@ -20,6 +17,7 @@ public class Node <T> {
 	public void setContent(T content) {
 		this.content = content;
 	}
+
 
 	public Node<T> getNextNode() {
 		return nextNode;
@@ -29,11 +27,9 @@ public class Node <T> {
 		this.nextNode = nextNode;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Node [content=" + content + "]";
 	}
-	
 	
 }

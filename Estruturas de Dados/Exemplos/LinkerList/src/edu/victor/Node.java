@@ -12,7 +12,6 @@ public class Node <T> {
 		this.content = content;
 	}
 	
-	
 	public T getContent() {
 		return content;
 	}
@@ -29,11 +28,9 @@ public class Node <T> {
 		this.nextNode = nextNode;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Node [content=" + content + "]";
 	}
-	
-	
+
 }

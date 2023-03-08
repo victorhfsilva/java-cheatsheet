@@ -21,11 +21,11 @@ public class Node <T> {
 		this.content = content;
 	}
 
-	public Node getNextNode() {
+	public Node<T> getNextNode() {
 		return nextNode;
 	}
 
-	public void setNextNode(Node nextNode) {
+	public void setNextNode(Node<T> nextNode) {
 		this.nextNode = nextNode;
 	}
 
